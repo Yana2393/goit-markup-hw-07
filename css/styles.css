@@ -786,7 +786,285 @@ body {
     background-color: #404BBF;
 }
 /*=================MODAL FORM=================*/
+/*==============MEDIA REQUEST LESS===================*/
+@media screen and (max-width: 480px) {
+    .site-nav {
+        display: none;
+    }
+    .site-adress {
+        display: none;
+    }
+    .container,
+    .container-thin {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+        .mobile-menu {
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: var(--hero-text-color);
+    
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .mobile-menu.is-open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+    
+        .mobile-menu-container {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-left: 40px;
+            padding-top: 80px;
+            padding-bottom: 40px;
+            height: 100%;
+        }
+    
+        .mobile-menu-close-btn {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            line-height: 0;
+            border-radius: 50%;
+            background-color: #E7E9FC;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 0;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+    .mobile-menu-close-icon {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
+    .mobile-menu-close-btn:hover,
+    .mobile-menu-close-btn:focus {
+        background-color: var(--accent-text-color);
+    }
+    
+    .mobile-menu-close-btn:hover .mobile-menu-close-icon,
+    .mobile-menu-close-btn:focus .mobile-menu-close-icon {
+        fill: var(--secondary-text-color);
+    }
+
+    .mobile-menu-list {
+        margin-bottom: auto;
+    }
+
+    .mobile-menu-list-iteem {
+        padding-bottom: 40px;
+    }
+
+    .mobile-menu-link {
+        font-family: var(--main-font);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 0.9;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+        text-decoration: none;
+    }
+
+    .mobile-menu-link:focus {
+        color: var(--accent-text-color);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .mobile-menu-adress-list-item {
+        padding-bottom: 40px;
+    }
+
+    .mobile-menu-nav-tel {
+        font-family: var(--main-font);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 0.9;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #4D5AE5;
+        text-decoration: none;
+    }
+    
+    .mobile-menu-nav-tel:focus {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .mobile-menu-nav-mail {
+        font-family: var(--main-font);
+        font-style: normal;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+        text-decoration: none;
+    }
+
+    .mobile-menu-nav-mail:focus {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .mobile-social-list {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        padding-right: 60px;
+
+    }
+    .mobile-menu-open {
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        line-height: 0;
+
+    }
+    .subtitle-section {
+        padding-bottom: 96px;
+    }
+    .features {
+        display: block;
+        gap: 24px;
+    }
+    .features-list-icon {
+        display: none;
+    }
+    .features-list-link {
+        display: none;
+    }
+    .card-title {
+        text-align: center;
+        font-family: var(--main-font);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--hero-background-color)
+    }
+    .card-text {
+        font-family: var(--main-font);
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        margin-bottom: 72px;
+    }
+    .list:last-child .card-text {
+        margin-bottom: 0;
+    }
+    .opportunities {
+        display: none;
+    }
+    .team-card {
+        width: 100%;
+        margin-bottom: 72px;
+    }
+
+    .team-card-img {
+        width: 100%;
+    }
+    .team-card-title {
+        text-align: center;
+        font-family: var(--main-font);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--hero-background-color)
+    }
+    .team-card-text {
+        font-family: var(--main-font);
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        margin-bottom: 8px;
+    }
+    .footer-container-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .team-card:last-child {
+        margin-bottom: 0;
+    }
+    .section-customers {
+        padding: 96px 0;
+    }
+    .section-customers .container-thin {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .customers-list {
+        display: flex;
+        justify-content: center;
+        gap: 72px 16px;
+        flex-wrap: wrap;
+    }
+    .customers-list-link {
+        width: 190px;
+        height: 88px;
+    }
+    .footer-container {
+        display: block;
+    }
+    .footer .container-thin {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main-logo-footer {
+        text-align: center;
+    }
+    .footer-info {
+        max-width: 268px;
+        margin-bottom: 72px;
+    }
+    .footer-media-list-wrapper {
+        margin: 0 auto 72px;
+    }
+    .media-text {
+        text-align: center;
+    }
+    .media-list {
+        width: 100%;
+    }
+    .subscrible-form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .subscrible-form-input-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .subscrible-form-input {
+        width: 100%;
+        margin: 0 auto 16px;
+    }
+}
+/*==============MEDIA REQUEST LESS===================*/
+/*==============MEDIA REQUEST HIDING===================*/
 @media screen and (min-width: 428px) and (max-width: 767px) {
     .site-nav {
         display: none;
@@ -805,6 +1083,7 @@ body {
         margin-bottom: 0;
     }
 }
+/*==============MEDIA REQUEST HIDING===================*/
 /*==============MEDIA REQUEST MOBILE===================*/
 @media screen and (min-width: 480px) {
     .container {
@@ -1008,7 +1287,6 @@ body {
         text-transform: capitalize;
         color: var(--hero-background-color)
     }
-
     .team-card-text {
         font-family: var(--main-font);
         font-size: 16px;
@@ -1277,6 +1555,9 @@ body {
 /*==============MEDIA REQUEST TABLET===================*/
 /*==============MEDIA REQUEST DESKTOP===================*/
 @media screen and (min-width: 1200px) {
+    .page-header {
+        padding-bottom: 24px;
+    }
     .page-header-container {
         display: flex;
         align-items: center;
